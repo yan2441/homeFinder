@@ -14,7 +14,7 @@ export const fetchApi = async (url) => {
       'x-rapidapi-key': 'dbdc1e7380mshf23d625a1e44e54p149710jsneba1ec309d1e'
     }
   };
-  const { data } = await axios.get(`${baseUrl}${url}`, config);
+  const { data } = await axios.get((url), config);
 
   return data;
 }
